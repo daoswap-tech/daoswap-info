@@ -295,8 +295,8 @@ export const Big = (number) => new BigNumber(number)
 
 export const urls = {
   showTransaction: (tx) => `https://rinkeby.etherscan.io/tx/${tx}/`,
-  showAddress: (address) => `https://www.etherscan.io/address/${address}/`,
-  showToken: (address) => `https://www.etherscan.io/token/${address}/`,
+  showAddress: (address) => `https://rinkeby.etherscan.io/address/${address}/`,
+  showToken: (address) => `https://rinkeby.etherscan.io/token/${address}/`,
   showBlock: (block) => `https://rinkeby.etherscan.io/block/${block}/`,
 }
 
