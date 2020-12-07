@@ -14,6 +14,7 @@ export const timeframeOptions = {
 export const SUPPORTED_LIST_URLS__NO_ENS = [
   'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
   'https://www.coingecko.com/tokens_list/uniswap/defi_100/v_0_0_0.json',
+  'https://app.daoswap.global/daoswap.tokenlist.json',
 ]
 
 // hide from overview list
