@@ -144,7 +144,7 @@ const Gray = styled.span`
 `
 
 const Blue = styled.span`
-  color: #2172e5;
+  color: #121870;
   :hover {
     cursor: pointer;
   }
