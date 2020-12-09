@@ -12,9 +12,9 @@ export const timeframeOptions = {
 
 // token list urls to fetch tokens from - use for warnings on tokens and pairs
 export const SUPPORTED_LIST_URLS__NO_ENS = [
-  'https://app.daoswap.global/daoswap.tokenlist.json',
   'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
   'https://www.coingecko.com/tokens_list/uniswap/defi_100/v_0_0_0.json',
+  'https://app.daoswap.global/daoswap.tokenlist.json',
 ]
 
 // hide from overview list
