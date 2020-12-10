@@ -702,6 +702,7 @@ export const PAIRS_BULK = gql`
   }
 `
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const PAIRS_HISTORICAL_BULK = (block, pairs) => {
   let pairsString = `[`
   pairs.map((pair) => {
