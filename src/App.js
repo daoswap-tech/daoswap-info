@@ -114,6 +114,9 @@ function App() {
             </WarningBanner>
           </WarningWrapper>
         )}
+        {
+          console.info(globalData)
+        }
         {latestBlock &&
         globalData &&
         Object.keys(globalData).length > 0 &&
