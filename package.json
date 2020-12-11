@@ -1,7 +1,7 @@
 {
   "name": "@daoswap/info",
   "description": "Daoswap Info",
-  "homepage": ".",
+  "homepage": "https://info.daoswap.global",
   "private": true,
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
