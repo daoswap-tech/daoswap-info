@@ -135,6 +135,8 @@ function PositionList({ positions }) {
     }
   }, [positions])
 
+  console.info(positions)
+
   const [ethPrice] = useEthPrice()
 
   const ListItem = ({ position, index }) => {
