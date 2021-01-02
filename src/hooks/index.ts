@@ -8,9 +8,19 @@ import copy from 'copy-to-clipboard'
 export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
-    const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-      tokenAddress
-    )}/logo.png`
+    let DOILogoAddress = ''
+    if (isAddress(tokenAddress)) {
+      DOILogoAddress =
+        tokenAddress.toLowerCase() === '0x7ef5ac1fe8b6832ebaddee1856e4a21e46843565'
+          ? 'https://www.daoswap.global/logo192.png'
+          : ''
+    }
+    const path =
+      DOILogoAddress !== ''
+        ? DOILogoAddress
+        : `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
+            tokenAddress
+          )}/logo.png`
     if (path) {
       Vibrant.from(path).getPalette((err, palette) => {
         if (palette && palette.Vibrant) {

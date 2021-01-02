@@ -70,9 +70,19 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-    address
-  )}/logo.png`
+  let DOILogoAddress = ''
+  if (isAddress(address)) {
+    DOILogoAddress =
+      address.toLowerCase() === '0x7ef5ac1fe8b6832ebaddee1856e4a21e46843565'
+        ? 'https://www.daoswap.global/logo192.png'
+        : ''
+  }
+  const path =
+    DOILogoAddress !== ''
+      ? DOILogoAddress
+      : `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
+          address
+        )}/logo.png`
 
   return (
     <Inline>
